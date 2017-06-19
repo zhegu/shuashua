@@ -176,16 +176,50 @@
 				event.preventDefault();
 				var username = $('#'+ form_id +' #username').val();
 				if (username=='') {
-					alert('用户名不能为空！');
+					alert('手机号不能为空！');
 					$('#'+ form_id +' #username').focus();
 					return false;	
 				}
+				var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/; 
+				if(!myreg.test(username)) 
+				{ 
+    				alert('请输入有效的手机号码！'); 
+    				return false; 
+				} 
 				var password = $('#'+ form_id +' #password').val();
 				if (password=='') {
 					alert('密码不能为空！');
 					$('#'+ form_id +' #password').focus();
 					return false;	
-				}	
+				}
+				var idCard = $('#'+ form_id +' #shenfen').val();
+				
+				var iSum=0 ;
+ 				var info="" ;
+ 				if(!/^\d{17}(\d|x)$/i.test(idCard)) {
+ 					alert('你输入的身份证长度或格式错误');
+ 					return false;
+ 				} 				
+ 				var sBirthday=idCard.substr(6,4)+"-"+Number(idCard.substr(10,2))+"-"+Number(idCard.substr(12,2));
+ 				var d=new Date(sBirthday.replace(/-/g,"/")) ;
+ 				if(sBirthday!=(d.getFullYear()+"-"+ (d.getMonth()+1) + "-" + d.getDate())){
+ 					alert('身份证上的出生日期非法');
+ 					return false;
+ 				}
+ 				var iSum = 0;
+				for(var i = 17;i>=0;i --) {
+					iSum += (Math.pow(2,i) % 11) * parseInt(sId.charAt(17 - i),11) ;
+				}
+ 				if(iSum%11!=1) {
+ 					alert('你输入的身份证号非法');
+ 					return false;
+ 				}
+				 //aCity[parseInt(sId.substr(0,2))]+","+sBirthday+","+(sId.substr(16,1)%2?"男":"女");//此次还可以判断出输入的身份证号的人性别
+
+				
+				
+				
+					
 				var verifycode = $('#'+ form_id +' #verifycode').val();
 				if (verifycode=='') {
 					alert('验证码密码不能为空！');

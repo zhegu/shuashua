@@ -36,8 +36,8 @@
 
 
 .col_2{ margin-top:20px;}
-.title span{font-size:24px;line-height:30px;}
-.title em a{font-size:12px;line-height:15px;color:#666;padding:0 17px;}
+.title span{font-size:24px;line-height:30px; margin-left:30px}
+.title em a{font-size:12px;line-height:15px;color:#666;padding:0 17px; left:30px}
 .col_2 ul{ width:1300px;}
 .col_2 li{ position:relative;float:left;width:275px;height:200px;margin:15px 33px 0 0;overflow:hidden;}
 .col_2 li img.gpic{width:275px;height:160px}
