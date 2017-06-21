@@ -31,8 +31,9 @@ a:hover {text-decoration: none;color: #186DC3;}
 }
 
 .header{ width:100%; height:100px;overflow:hidden;}
-.header .logo{width:190px; height:60px; margin:20px 0 0 0; float:left; background:url("../images/logo.png") no-repeat 0 0;}
-.header .logo a{ display:block; text-indent:-9999px;width:190px; height:60px;}
+/* .header .logo{width:190px; height:60px; margin:20px 0 0 0; float:left; background:url("../images/logo.png") no-repeat 0 0;} */
+.header .logo{width:190px; height:60px; margin:20px 0 0 0; float:left;}
+.header .logo a{ display:block;width:190px; height:60px;line-height:60px;text-align:center;font-size:28px}
 .header-search{width:330px; margin:0 100px 0 200px; padding:20px 0;float:left;}
 .searchbar{width:100%; overflow:hidden}
 .searchstyle{ width:80%; height:29px; background:#fff; border:3px solid #DC2D11; margin-bottom:10px; float:left;display:inline-block;padding-left:2px;}
