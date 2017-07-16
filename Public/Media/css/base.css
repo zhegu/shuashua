@@ -63,7 +63,7 @@ a:hover {text-decoration: none;color: #186DC3;}
 .f-links .roll li{float:left;height:22px;line-height:22px;text-align:center; padding-right:15px;}
 .f-links .roll li a{color:#666;transition:all .5s ease}
 .f-links a.more{width:50px;height:22px;display:block;text-align:center;line-height:22px;color:#666;position:absolute;top:0;right:0;transition:all .5s ease}
-.infoot{height:106px;overflow:hidden;padding-top:20px}
+.infoot{height:124px;overflow:hidden;padding-top:20px}
 .infoot .ifl{float:left;width:170px;height:88px;padding-top:8px}
 .infoot .ifc{float:left;width:607px;padding-left:40px}
 .infoot .ifc p{color:#666;line-height:18px;font-size:12px; line-height:1.8;}
