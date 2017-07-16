@@ -1,0 +1,1116 @@
+@charset "utf-8";
+
+@font-face{
+    font-family: 'fzltcxhjw';
+    src: url("http://www.shenns.com/img/fzltcxhjw.ttf"),
+    url("http://www.shenns.com/img/fzltcxhjw.woff");
+    font-weight:bold;
+}
+@font-face {
+    font-family: 'fzlantingheis-ul-gbregular';
+    src: url('http://www.shenns.com/img/fzltcxhjw_0.eot');
+    src: url('http://www.shenns.com/img/fzltcxhjw_0.eot?#iefix') format('embedded-opentype'),
+    url('http://www.shenns.com/img/fzltcxhjw_0.woff2') format('woff2'),
+    url('http://www.shenns.com/img/fzltcxhjw_0.woff') format('woff'),
+    url('http://www.shenns.com/img/fzltcxhjw_0.ttf') format('truetype'),
+    url('http://www.shenns.com/img/fzltcxhjw_0.svg#fzlantingheis-ul-gbregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*首页新加*/
+@font-face {
+    font-family: 'robotothin';
+    src: url('http://www.shenns.com/img/roboto-thin-webfont.eot');
+    src: url('http://www.shenns.com/img/roboto-thin-webfont.eot?#iefix') format('embedded-opentype'),
+    url('http://www.shenns.com/img/roboto-thin-webfont.woff2') format('woff2'),
+    url('http://www.shenns.com/img/roboto-thin-webfont.woff') format('woff'),
+    url('http://www.shenns.com/img/roboto-thin-webfont.ttf') format('truetype'),
+    url('http://www.shenns.com/img/roboto-thin-webfont.svg#robotothin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+    text-decoration: none;
+    font-family: "Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑;
+    list-style: none;
+}
+
+/* 
+body {
+    background: #f1f1f1;
+    font-size: 14px;
+    color: #333;
+}
+ */
+
+a{color: #444;}
+a:hover{color: #e60012;}
+
+.none{ display: none!important;}
+.clear { clear: both; }
+/* .clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } */
+.noborder{border: none!important;}
+.blank5 { height: 5px;}
+.blank6 { height: 6px; }
+.blank10 { height: 10px; }
+.blank15 { height: 15px; }
+.blank20 { height: 20px; }
+.margin{ margin: 0 auto; }
+.f_l { float: left; }
+.f_r { float: right; }
+.w1245 { width: 1242px; }
+.w1089 { width: 1089px; }
+.w1169 { width: 1209px; }
+
+.w388{width: 388px;}
+.w40{width: 40px;}
+.w30{width: 30px;}
+.w20{width: 20px;}
+.w10{width: 10px;}
+.h340{height: 340px;}
+.h150{height: 150px!important;}
+.h40{height: 40px;}
+.h30{height: 30px;}
+.h20{height: 20px;}
+.h10{height: 10px;}
+.layout {width: 1209px; margin: 0 auto; overflow: hidden;}
+
+/* 
+.header{
+    background: #fff;
+    height: 68px;
+}
+
+.header .layout{
+    background: #fff;
+    height: 68px;
+    position: relative;
+}
+ */
+
+/* 
+.logo{
+    display: block;
+    background: url("../img/logo.png") no-repeat;
+    width: 204px;
+    height: 41px;
+    position: absolute;
+    top: 15px;
+    left: 2px;
+}
+ */
+.nav{
+    height: 37px;
+    font-size: 16px;
+    position: absolute;
+    right: 230px;
+}
+.nav a{
+    display: inline-block;
+    padding: 6px 22px 0 22px;
+    line-height: 60px;
+    color: #555;
+}
+.nav a:hover{
+    color: #e60012;
+}
+.nav a.cur{
+    border-bottom: solid 2px #e60012;
+    color:#e60012;
+}
+.regNew {
+    text-align: right;
+    height: 37px;
+    font-size: 16px;
+    position: absolute;
+    right: 0;
+}
+.regNew a{
+    display: inline-block;
+    width: 72px;
+    height: 31px;
+    line-height: 28px;
+    position: relative;
+    top: 0px;
+    right:20px;
+    cursor: pointer;
+}
+.regNew a.cur{
+    color:#e60012;
+    background: url("../img/navLogin_icon.png") 0 -93px no-repeat;
+  }
+.navLogin{
+    background: url("../img/navLogin_icon.png") 0 0 no-repeat;
+    margin-right: 15px;
+}
+.navLogin:hover{
+    background: url("../img/navLogin_icon.png") 0 -31px no-repeat;
+}
+.navRegister{
+    background: url("../img/navLogin_icon.png") 0 -62px no-repeat;
+}
+.navRegister:hover{
+    background: url("../img/navLogin_icon.png") 0 -93px no-repeat;
+}
+
+
+.banner{
+    background: url("../img/banner_bg.jpg") 50% 100%;
+    height: 450px;
+}
+.banner div{
+    position: relative;
+}
+.banner .shadow{
+    background: url("http://www.shenns.com/img/shadow.png") 0 -1px;
+    height: 3px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.banner h1{
+    background: url("http://www.shenns.com/img/adtxt_bg.png");
+    padding: 10px 30px;
+    font-family: "fzlantingheis-ul-gbregular";
+    text-align: center;
+    font-size: 45px;
+    line-height: 45px;
+    color: #fff;
+    position: absolute;
+    top: 148px;
+    left: 0px;
+}
+.banner h2{
+    font-family: "fzlantingheis-ul-gbregular";
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 315px;
+    right: 0px;
+}
+.banner2{
+    background: url("../img/banner2_bg.jpg") 50% 35%;
+    height: 350px;
+
+}
+.banner2 div{
+    position: relative;
+}
+.banner2 .shadow{
+    background: url("http://www.shenns.com/img/shadow.png") 0 -1px;
+    height: 3px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.banner2 h1{
+    padding: 5px 0;
+    font-family: "fzlantingheis-ul-gbregular";
+    text-align: center;
+    font-size: 36px;
+    line-height: 45px;
+    color: #e60012;
+    position: absolute;
+    top: 47px;
+    left: 0px;
+}
+.banner2 h2{
+    font-family: "fzlantingheis-ul-gbregular";
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+}
+.banner3{
+    background: url("../img/login_bg.jpg") 50% 0%;
+    height: 200px;
+}
+
+/* start 幻灯片*/
+.magic_lantern_box {
+    width:801px;
+    height:357px;
+    position:relative;
+    overflow:hidden;
+}
+.magic_lantern_box .magic_lantern_list {
+    height: 100%;
+}
+.magic_lantern_box .magic_lantern_list li {
+    display: none;
+    text-align: center;
+    background-size: 100% 100%;
+    height: 100%;
+}
+.magic_lantern_box .magic_lantern_list li a {
+    display: block;
+    height: 100%;
+}
+.magic_lantern_box .magic_lantern_list .current {
+    display: block;
+}
+.video_synopsis {
+    height: 440px;
+    width: 100%;
+    font-family: "宋体", Arial, Helvetica, sans-serif;
+    color: #fff;
+    position: absolute;
+    top: 0;
+}
+.synopsis_left {
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    background: url('http://www.shenns.com/img/lantern_bg.png') no-repeat;
+    position:relative;
+    top: 317px;
+}
+.synopsis_left span {
+    display: block;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+}
+.synopsis_right {
+    float: right;
+    width: 370px;
+    height: 62px;
+    position:relative;
+    top: 232px;
+    right: 0px;
+}
+.synopsis_right li img, .synopsis_right li {
+    width: 106px;
+    height: 62px;
+}
+.synopsis_right li {
+    padding: 2px;
+    margin-right: 10px;
+    float: left;
+    cursor: pointer;
+    background: #C2C2C2;
+}
+/* end 幻灯片*/
+
+.articleList{
+    background: #fff;
+    padding: 24px 30px;
+    overflow: hidden;
+}
+.articleList dt{
+    background: url("../img/titIcon.png") no-repeat 0 0;
+    height: 22px;
+    padding-bottom:13px;
+    border-bottom: solid 1px #ddd;
+    position: relative;
+}
+.articleList dt .title{
+    display: inline-block;
+    font-size: 22px;
+    line-height: 22px;
+    color: #e60012;
+    position: absolute;
+    top: -2px;
+    left: 12px;
+}
+.articleList dt .more{
+    background: url("http://www.shenns.com/img/more_icon.png") no-repeat 100% 2px;
+    display: inline-block;
+    height: 14px;
+    line-height: 14px;
+    color: #888;
+    position: absolute;
+    padding-right: 15px;
+    top: 3px;
+    right: 0px;
+}
+.articleList dt .more:hover{
+    color: #e60012;
+    background: url("http://www.shenns.com/img/more_icon.png") no-repeat 100% -18px;
+}
+.articleList dd{
+    height: 38px;
+    line-height: 38px;
+    border-bottom: dotted 1px #ccc;
+    position: relative;
+}
+.articleList dd span{
+    display: inline-block;
+    margin-top: 2px;
+}
+.articleList dd a{
+    display: inline-block;
+    color: #555;
+    position: absolute;
+    left: 0;
+}
+.articleList dd a:hover{
+    color: #e60012;
+}
+.articleList dd i{
+    display: inline-block;
+    font-style: normal;
+    color: #999;
+    position: absolute;
+    right: 0;
+}
+
+.productList{
+    background: #fff;
+    padding: 24px 0 2px 30px;
+    overflow: hidden;
+}
+.productList dt{
+    background: url("../img/titIcon.png") no-repeat 0 0;
+    height: 22px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    padding-bottom:13px;
+    border-bottom: solid 1px #ddd;
+    position: relative;
+}
+.productList dt .title{
+    display: inline-block;
+    font-size: 22px;
+    line-height: 22px;
+    color: #e60012;
+    position: absolute;
+    top: -2px;
+    left: 12px;
+}
+.productList dt .note{
+ display: inline-block;
+ line-height: 22px;
+ color: #888;
+ position: absolute;
+ top: 1px;
+ left: 115px;
+}
+.productList dt .more{
+    background: url("http://www.shenns.com/img/more_icon.png") no-repeat 100% 2px;
+    display: inline-block;
+    height: 14px;
+    line-height: 14px;
+    color: #888;
+    position: absolute;
+    padding-right: 15px;
+    top: 3px;
+    right: 0px;
+}
+.productList dt .more:hover{
+    color: #e60012;
+    background: url("http://www.shenns.com/img/more_icon.png") no-repeat 100% -18px;
+}
+.productList dd{
+    display: block;
+    width: 97%;
+    margin-top: 10px;
+    position: relative;
+    float: left;
+    color: #444;
+    font-size: 16px;
+    line-height: 1.9em;
+    text-indent: 2em;
+    padding-bottom: 35px;
+}
+.productList dd a{
+    display: inline-block;
+    color: #555;
+    position: absolute;
+    width: 238px;
+    height: 157px;
+    left: 0;
+}
+.productList dd a:hover{
+    color: #e60012;
+}
+.productList dd img{
+    width: 250px;
+    height: 175px;
+    margin-top: 5px;
+    margin-right: 15px;
+}
+.productList dd span{
+    width: 280px;
+    color: #444;
+    font-size: 14px;
+    line-height: 1.9em;
+    text-indent: 2em;
+    margin-bottom: 5px;
+    float: right;
+}
+
+.dataList{
+    background: #fff;
+    padding: 24px 30px 20px 30px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.dataList h1{
+    background: url("../img/titIcon.png") no-repeat 0 0;
+    display: block;
+    height: 22px;
+    padding-bottom:13px;
+    position: relative;
+}
+.dataList h1 a{
+    display: block;
+    font-size: 22px;
+    line-height: 22px;
+    color: #e60012;
+    position: absolute;
+    top: -2px;
+    left: 12px;
+}
+.dataList p{
+    overflow: hidden;
+    line-height: 30px;
+    text-align: left;
+}
+.dataList p a{
+    display: inline-block;
+    margin: 0 20px 0 0;
+    color: #555;
+}
+
+.article h1{
+    font-size: 22px;
+    padding: 0;
+    margin-bottom: 10px;
+    color: #e60012;
+    text-align: center;
+    display: block;
+}
+.article h2{
+    background: url("http://www.shenns.com/img/units_line.png") repeat-x 0 33px;
+    padding: 20px 0 10px 0;
+    font-size: 18px;
+    color: #e60012;
+    text-align: center;
+    display: block;
+}
+.article h2 a{
+    width: 184px;
+    background: #f5f5f5;
+    padding: 0 10px;
+    font-size: 18px;
+    color: #e60012;
+    text-align: center;
+    display: block;
+}
+.article p{
+    text-align: left;
+}
+.article span{
+    background: #fff;
+    width: 266px;
+    margin: 3px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #555;
+    text-align: left;
+    display: inline-block;
+}
+.article span:hover{
+    background: #e60012;
+    color: #fff;
+}
+
+
+.dataTable{
+    border-collapse:collapse;
+    border: 2px solid #d1d1d1;
+    width: 100%;
+    font-size:13px;
+}
+.dataTable caption{
+    font-size: 22px;
+    padding-bottom: 15px;
+    color: #e60012;
+}
+
+.dataTable th,.dataTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.dataTable th {
+    background: #eee;
+    color: #333;
+    white-space:nowrap;
+    text-align: right;
+}
+
+.dataTable td {
+    background: #fff;
+    color: #000;
+}
+
+.about{
+    margin: 50px auto;
+    padding: 30px;
+    background: #fff;
+    overflow: hidden;
+}
+.about h1{
+    display: block;
+    font-size: 28px;
+    line-height: 28px;
+    color: #000;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.about h2{
+    display: block;
+    font-size: 14px;
+    line-height: 22px;
+    color: #666;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+.about img{
+    width: 530px;
+    height: 350px;
+    display: block;
+    float: left;
+}
+.about p{
+    width: 640px;
+    display: block;
+    line-height: 2em;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #444;
+    float: right;
+}
+
+.registerForm {
+    display: block;
+    width: 1200px;
+    height: 475px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 50px 0;
+    background: #fff;
+}
+
+.registerForm div {
+    margin: 10px 0;
+    position: relative;
+}
+
+.registerForm p {
+    margin-top: 160px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #f00;
+}
+
+.registerForm i{
+    font-style: normal;
+    font-size: 16px;
+    color: #f00;
+}
+
+.registerForm input{
+    display: inline-block;
+    width: 300px;
+    height: 24px;
+    padding: 5px 10px;
+    border: solid 1px #ddd;
+}
+
+.registerForm input.radio{
+    width: 30px;
+}
+
+.registerForm input.submit{
+    width: 322px;
+    height: 40px;
+    background: #e60012;
+    border: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.registerForm span{
+    display: inline-block;
+    text-align: right;
+    padding-right: 10px;
+    width: 380px;
+    height: 34px;
+}
+
+.registerForm span b{
+    color: #f00;
+}
+
+.news a{
+    display: block;
+    padding: 20px;
+    margin: 10px 10px;
+    background: #fff;
+    width:343px;
+    height: 443px;
+    color: #888;
+}
+.news h1{
+    line-height: 1.5em;
+    font-size: 18px;
+    color: #000;
+    margin: 15px 0 7px 0;
+}
+.news img{
+    width:100%;
+    height: 230px;
+}
+.news .description{
+    line-height: 1.7em;
+}
+.news .description p{
+    margin: 5px 0;
+}
+.infolist a{
+    height: 460px;
+ }
+.infolist a span{
+    font-size: 12px;
+    color: red;
+ }
+.infolist h1{
+    font-size: 16px;
+    color: #000;
+    margin: 0 0 10px 0;
+}
+.infolist h1 i{
+    color: #f00;
+    font-style:normal;
+}
+.infolist img{
+    width:100%;
+    height: 180px;
+}
+.newsContent{
+    background: #fff;
+    padding: 40px 30px;
+    font-size: 16px;
+    line-height: 1.8em;
+    color:#666;
+}
+.newsContent h1{
+    font-size: 28px;
+    text-align: center;
+    color:#333;
+}
+.newsContent h2{
+    font-size: 16px;
+    line-height: 5em;
+    text-align: center;
+    font-weight: normal;
+    color:#999;
+}
+.newsContent img{
+    width: 553px;
+    margin: 20px 10px 0 10px;
+}
+.newsContent p{
+    font-size: 16px;
+    line-height: 2em;
+    text-indent: 2em;
+}
+
+.product a{
+    width:543px;
+    height: 245px;
+}
+.product img{
+    width:255px;
+    height: 245px;
+    float: left;
+}
+.product dl{
+    width:270px;
+    height: 300px;
+    float: right;
+}
+.product dt{
+    line-height: 1em;
+    font-size: 18px;
+    color: #000;
+    margin: 0 0 15px 0;
+}
+.product dt em{
+    font-size: 16px;
+    font-style: normal;
+    color: #666;
+}
+.product dd span{
+    margin-left: -7px;
+    color: #333;
+}
+
+
+.location{
+    background: url("http://www.shenns.com/img/home.png") #fff no-repeat 24px 52%;
+    padding: 0 56px;
+    margin: 20px 0;
+    line-height: 3.6em;
+    color: #999;
+}
+.location a{
+    color: #666;
+}
+.location a:hover{
+    color: #e60012;
+}
+
+.focus{
+    height: 440px;
+    background: #eee;
+}
+.indexSearch{
+    display: block;
+    height: 63px;
+    line-height: 63px;
+    text-align: center;
+    background: #e60012;
+}
+.indexSearch:hover{
+    background: #e60012;
+}
+.indexSearch img{
+    margin-top: 18px;
+    height:30px;
+}
+/* 
+.footer{
+    overflow: hidden;
+    text-align: center;
+    background: #444;
+}
+ */
+.friendlink{
+    line-height: 40px;
+    height: 40px;
+    color: #ccc;
+}
+.friendlink a{
+    color: #ccc;
+}
+.friendlink a:hover{
+    color: #fff;
+}
+.copyright{
+    background: #333;
+    color: #ddd;
+    line-height: 2em;
+    padding: 35px 0;
+    overflow: hidden;
+}
+
+
+
+
+
+.sgBtn{width: 135px; height: 35px; line-height: 35px; margin-left: 10px; margin-top: 10px; text-align: center; background-color: #0095D9; color: #fff; float: left; border-radius: 5px;}
+
+
+
+
+.login{
+    background: #fff;
+}
+.loginHeader {
+    display: block;
+    width: 1000px;
+    height: 41px;
+    margin: 12% auto 1% auto;
+    position: relative;
+    top:0
+}
+.loginLogo{
+    display: block;
+    width: 230px;
+    height: 41px;
+    position: absolute;
+    left: 0;
+}
+.loginRegister{
+    display: block;
+    width: 195px;
+    height: 31px;
+    color: #e60012;
+    line-height: 29px;
+    text-align: right;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    cursor: pointer;
+    background: url("../img/navLogin_icon.png") 0 -62px no-repeat;
+}
+.loginRegister:hover{
+    color: #000;
+    background: url("../img/navLogin_icon.png") 0 -93px no-repeat;
+}
+
+
+.loginLayout {
+    width: 1000px;
+    margin: 0 auto;
+    background: url("../img/login_bg.jpg") 55% 50% repeat-x;
+    overflow: hidden;
+    font: 14px/1.5 arial, "微软雅黑";
+}
+.loginBox {
+    height: 380px;
+    position: relative;
+}
+.loginLayout form {
+    display: block;
+    background: url("../img/form_bg.png");
+    width:220px;
+    padding:18px 40px 30px 40px;
+    overflow: hidden;
+    font: 14px/1.5 arial, "微软雅黑";
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50px;
+    right: 70px;
+}
+.loginLayout span {
+    display: block;
+    font: 16px/4.2em arial, "微软雅黑";
+    color: #333;
+    text-align: center;
+}
+.loginLayout span.error {
+    color: #f00;
+}
+
+.loginLayout label {
+    display: block;
+    overflow: hidden;
+    margin: 0 0 15px 0;
+    position: relative;
+}
+
+.loginLayout input {
+    vertical-align: middle;
+    outline: none;
+    border: solid 1px #bbb;
+    width: 218px;
+    height: 40px;
+    text-indent:45px;
+    color: #666;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font: 16px/1.5 arial, "微软雅黑";
+    display:block;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.loginLayout input:hover {
+    border: solid 1px #fd2453;
+}
+
+.loginLayout input:hover {
+}
+
+.loginLayout input.username {
+    background: url("../img/icoUser.png") #fff 10px 8px no-repeat;
+}
+
+.loginLayout input.username:hover {
+    background: url("../img/icoUser.png") #fff 10px -42px no-repeat;
+}
+
+.loginLayout input.password {
+    background: url("../img/icoUser.png") #fff 10px -92px no-repeat;
+    margin: 0px 0;
+}
+
+.loginLayout input.password:hover {
+    background: url("../img/icoUser.png") #fff 10px -142px no-repeat;
+}
+.loginLayout input.captcha {
+    width: 120px;
+    background: url("../img/icoUser.png") #fff 10px -200px no-repeat;
+}
+.loginLayout input.captcha:hover {
+    background: url("../img/icoUser.png") #fff 10px -250px no-repeat;
+}
+.loginLayout .codeimg{
+    cursor:pointer;
+    position: absolute;
+    width: 120px;
+    height: 43px;
+    right: 2px;
+    top: 0px;
+}
+
+.loginLayout .loginBtn {
+    display:block;
+    background: url("../img/icoUser.png") #fd2453 0 -310px repeat-x;
+    width: 220px;
+    height: 42px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    font-size:15px;
+    cursor: pointer;
+    border: none;
+    border-bottom: solid 3px #dd103c;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.loginLayout .loginBtn:hover {
+    border: 0;
+    background: url("../img/icoUser.png") #fd2453 0 -360px repeat-x;
+    border-bottom: solid 3px #159d00;
+}
+.loginFooter{
+    margin-top:30px;
+    font-size:12px;
+    color:#666;
+    line-height: 1.8em;
+    text-align:center;
+}
+
+
+.sgBtn{width: 135px; height: 35px; line-height: 35px; margin-left: 10px; margin-top: 10px; text-align: center; background-color: #0095D9; color: #fff; float: left; border-radius: 5px;}
+/*垂直居中*/
+.verticalAlign{ vertical-align:middle; display:inline-block; height:100%; margin-left:-1px;}
+
+.xcConfirm .xc_layer{position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #666666; opacity: 0.5; z-index: 2147000000;}
+.xcConfirm .popBox{position: fixed; left: 50%; top: 50%; background-color: #ffffff; z-index: 2147000001; width: 570px; height: 300px; margin-left: -285px; margin-top: -150px; border-radius: 5px; font-weight: bold; color: #535e66;}
+.xcConfirm .popBox .ttBox{height: 30px; line-height: 30px; padding: 14px 30px; border-bottom: solid 1px #eef0f1;}
+.xcConfirm .popBox .ttBox .tt{font-size: 18px; display: block; float: left; height: 30px; position: relative;}
+.xcConfirm .popBox .ttBox .clsBtn{display: block; cursor: pointer; width: 12px; height: 12px; position: absolute; top: 22px; right: 30px; background: url("../img/icons.png") -48px -96px no-repeat;}
+.xcConfirm .popBox .txtBox{margin: 40px 100px; height: 100px; overflow: hidden;}
+.xcConfirm .popBox .txtBox .bigIcon{float: left; margin-right: 20px; width: 48px; height: 48px; background-image: url("../img/icons.png"); background-repeat: no-repeat; background-position: 48px 0;}
+.xcConfirm .popBox .txtBox p{ height: 84px; margin-top: 16px; line-height: 26px; overflow-x: hidden; overflow-y: auto;}
+.xcConfirm .popBox .txtBox p input{width: 364px; height: 30px; border: solid 1px #eef0f1; font-size: 18px; margin-top: 6px;}
+.xcConfirm .popBox .btnArea{border-top: solid 1px #eef0f1;}
+.xcConfirm .popBox .btnGroup{float: right;}
+.xcConfirm .popBox .btnGroup .sgBtn{margin-top: 14px; margin-right: 10px;}
+.xcConfirm .popBox .sgBtn{display: block; cursor: pointer; float: left; width: 95px; height: 35px; line-height: 35px; text-align: center; color: #fff; border-radius: 5px;}
+.xcConfirm .popBox .sgBtn.ok{background: #fd2453; color: #fff;}
+.xcConfirm .popBox .sgBtn.cancel{background: #546a79; color: #fff;}
+
+
+
+
+
+
+.registerForm input.submitone{
+    width: 322px;
+    height: 40px;
+    background: #F6A623;
+    border: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+.registerForm select {
+    display: inline-block;
+    width: 322px;
+    height: 34px;
+    padding: 5px 10px;
+    border: solid 1px #ddd;
+    line-height: 34px;
+    cursor: pointer;
+    margin-left: -4px;
+}
+.code-pic {
+    display: inline-block;
+    height: 30px;
+    position: absolute;
+    left: 622px;
+    top: 3px;
+}
+
+
+
+.standard ul li {
+    width: 168px;
+    height: 185px;
+    display: inline-block;
+    border: 1px solid #E3E3E3;
+    padding: 15px 10px;
+    float: left;
+    margin: 0 19px;
+}
+.standard ul li img {
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: 0 auto;
+}
+p.standard-number {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    text-indent: inherit;
+    line-height: 20px;
+    border-bottom: 1px solid #E3E3E3;
+}
+p.standard-text {
+    text-indent: inherit;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+a.standard-btn {
+    width: 190px;
+    height: 40px;
+    background: #F6A623;
+    border: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    line-height: 40px;
+    margin: 40px auto 20px auto;
+    text-align: center;
+}
+p.standard-info{
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
